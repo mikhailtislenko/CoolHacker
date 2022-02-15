@@ -1,0 +1,28 @@
+﻿<Window x:Class="CoolHacker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CoolHacker"
+        mc:Ignorable="d"
+        Title="CoolHacker" Height="900" Width="1600" ResizeMode="NoResize">
+    <Grid HorizontalAlignment="Center" Width="1600" Height="884" VerticalAlignment="Top">
+        <ListBox x:Name="AvailablePartsLstBx" Margin="30,216,0,0" Width="400" Height="576" VerticalAlignment="Top" HorizontalAlignment="Left" MouseDoubleClick="AvailablePartsLstBx_MouseDoubleClick" FontSize="16" SelectionChanged="AvailablePartsLstBx_SelectionChanged"/>
+        <Label Content="Задача:" Margin="550,145,0,0" FontSize="36" HorizontalAlignment="Left" Width="159" Height="73" VerticalAlignment="Top"/>
+        <ListBox x:Name="SelectedPartsLstBx" Margin="1050,216,0,0" Width="400" HorizontalAlignment="Left" Height="576" VerticalAlignment="Top" MouseDoubleClick="SelectedPartsLstBx_MouseDoubleClick" FontSize="16" SelectionChanged="SelectedPartsLstBx_SelectionChanged"/>
+        <TextBlock x:Name="ObjectiveTxtBlck" Text="TextBlock" TextWrapping="Wrap" Margin="550,223,0,0" FontSize="20" Width="400" Height="450" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Button x:Name="ControlBtn" Content="Проверить выполнение" Margin="550,742,0,0" FontSize="20" Height="50" VerticalAlignment="Top" HorizontalAlignment="Left" Width="400" Click="ControlBtn_Click"/>
+        <Button x:Name="MotherboardsBtn" Content="Материнская плата" Margin="30,26,0,0" FontSize="20" HorizontalAlignment="Left" Width="200" Height="50" VerticalAlignment="Top" Click="MotherboardsBtn_Click"/>
+        <Button x:Name="CPUsBtn" Content="Процессор" Margin="302,26,0,0" FontSize="20" HorizontalAlignment="Left" Width="200" Height="50" VerticalAlignment="Top" Click="CPUsBtn_Click"/>
+        <Button x:Name="VideoCardsBtn" Content="Видеокарта" Margin="827,26,0,0" FontSize="20" HorizontalAlignment="Left" Width="200" Height="50" VerticalAlignment="Top" Click="VideoCardsBtn_Click"/>
+        <Button x:Name="DiscDrivesBtn" Content="HDD/SSD" Margin="1091,26,0,0" FontSize="20" HorizontalAlignment="Left" Width="200" Height="50" VerticalAlignment="Top" Click="DiscDrivesBtn_Click"/>
+        <Button x:Name="RamsBtn" Content="RAM" Margin="571,26,0,0" FontSize="20" HorizontalAlignment="Left" Width="200" Height="50" VerticalAlignment="Top" Click="RamsBtn_Click"/>
+        <Label Content="Доступные детали:" Margin="30,145,0,0" FontSize="36" HorizontalAlignment="Left" Width="400" Height="73" VerticalAlignment="Top"/>
+        <Label Content="Конфигурация машины:" Margin="1050,145,0,0" FontSize="36" HorizontalAlignment="Left" Width="433" Height="73" VerticalAlignment="Top"/>
+        <Button x:Name="ExitBtn" Content="Exit" Margin="1350,26,0,0" FontSize="20" HorizontalAlignment="Left" Width="200" Height="50" VerticalAlignment="Top" Click="ExitBtn_Click"/>
+        <Label x:Name="TascLbl" Content="Low" Margin="728,145,0,0" FontSize="36" HorizontalAlignment="Left" Width="222" Height="73" VerticalAlignment="Top"/>
+
+
+
+    </Grid>
+</Window>
